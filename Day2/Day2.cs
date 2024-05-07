@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Day2
 {
@@ -58,6 +59,23 @@ namespace Day2
             Console.WriteLine("Enter your full name:");
             string name = Console.ReadLine();
             Console.WriteLine(name);
+            
+            Console.WriteLine("How many bedrooms are there in your house?");
+            int bedrooms = int.Parse(Console.ReadLine());
+            Console.WriteLine(bedrooms);
+            
+            Console.WriteLine("Enter the product price:");
+            double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine(price.ToString("F2", CultureInfo.InvariantCulture));
+            
+            Console.WriteLine("Enter your last name, age and height (same line):");
+            string[] data = Console.ReadLine().Split(' '); // Split by space
+            string lastName = data[0];
+            int age = int.Parse(data[1]);
+            double height = double.Parse(data[2], CultureInfo.InvariantCulture);
+            Console.WriteLine(lastName);
+            Console.WriteLine(age);
+            Console.WriteLine(height.ToString("F2", CultureInfo.InvariantCulture));
 
         }
     }
