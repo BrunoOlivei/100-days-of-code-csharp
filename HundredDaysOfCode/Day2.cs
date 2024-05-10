@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Day2
+namespace HundredDaysOfCode
 {
     class Day2
     {
-        static void Main(string[] args)
+        public static void DayTwo(string[] args)
         {
             // ArithmeticOperators(args);
             //

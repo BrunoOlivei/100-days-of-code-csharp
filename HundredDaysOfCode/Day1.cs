@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Day1
+namespace HundredDaysOfCode
 {
-    class Day1
+    public class Day1
     {
-        static void Main(string[] args)
+        public static void DayOne(string[] args)
         {
             ConversionAndCasting(args);
             
